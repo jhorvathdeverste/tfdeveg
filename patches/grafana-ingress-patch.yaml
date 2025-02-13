@@ -1,0 +1,11 @@
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: grafana
+            port:
+              number: 80
+        path: /grafana
+        pathType: Prefix

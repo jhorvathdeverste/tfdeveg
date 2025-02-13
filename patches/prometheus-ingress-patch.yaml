@@ -1,0 +1,11 @@
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: prometheus-server
+            port:
+              number: 80
+        path: /prometheus
+        pathType: Prefix
